@@ -11,8 +11,8 @@ const Location = () => {
         {location}, {country}
       </h1>
       <span className="text-xl font-light">
-        {Math.abs(lon)}°{lon >= 0 ? "N" : "S"}, {Math.abs(lat)}°
-        {lat >= 0 ? "W" : "E"}
+        {Math.abs(lat)}°{lat >= 0 ? "N" : "S"}, {Math.abs(lon)}°
+        {lon >= 0 ? "E" : "W"}
       </span>
     </div>
   );

@@ -1,13 +1,11 @@
 import PropTypes from "prop-types";
-import { convertDateToDay } from "../../utils/convertDateToDay";
 
 const DayWeather = ({ weatherData, key }) => {
-  const { icon, temp, date } = weatherData;
-  const day = convertDateToDay(date);
+  const { icon, temp, day } = weatherData;
 
   return (
     <li
-      className="flex h-24 w-full items-center justify-center gap-6 bg-white bg-opacity-25"
+      className="flex h-24 w-full items-center justify-center gap-4 bg-white bg-opacity-25"
       key={key}
     >
       <img
@@ -26,8 +24,8 @@ const DayWeather = ({ weatherData, key }) => {
 DayWeather.propTypes = {
   weatherData: PropTypes.shape({
     icon: PropTypes.string.isRequired,
-    date: PropTypes.string.isRequired,
     temp: PropTypes.number.isRequired,
+    day: PropTypes.string.isRequired,
   }).isRequired,
   key: PropTypes.number.isRequired,
 };
