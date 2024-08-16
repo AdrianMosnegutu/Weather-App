@@ -5,12 +5,13 @@ const TempAndIcon = () => {
   const { icon, temp } = useContext(CurrentWeatherContext);
 
   return (
-    <div>
+    <div className="flex flex-col items-center justify-center">
       <img
+        className="aspect-square w-52"
         src={`https://openweathermap.org/img/wn/${icon}@4x.png`}
         alt="weather icon"
       />
-      <h2>{temp}°C</h2>
+      <h2 className="text-5xl font-light">{temp}°C</h2>
     </div>
   );
 };
