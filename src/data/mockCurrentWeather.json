@@ -1,12 +1,12 @@
 {
-  "location": "Cluj",
+  "location": "Cluj-Napoca",
   "country": "RO",
   "coord": {
     "lon": 23.324,
     "lat": 39.421
   },
   "icon": "10d",
-  "temp": 32,
+  "temp": 31,
   "tempMin": 30,
   "tempMax": 33,
   "description": "clear sky",
