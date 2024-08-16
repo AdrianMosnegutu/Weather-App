@@ -6,11 +6,11 @@ const Location = () => {
   const { lon, lat } = coord;
 
   return (
-    <div>
-      <h1>
+    <div className="flex flex-col items-center justify-center">
+      <h1 className="mb-3 text-center text-5xl font-bold">
         {location}, {country}
       </h1>
-      <span>
+      <span className="text-xl font-light">
         {Math.abs(lon)}°{lon >= 0 ? "N" : "S"}, {Math.abs(lat)}°
         {lat >= 0 ? "W" : "E"}
       </span>
