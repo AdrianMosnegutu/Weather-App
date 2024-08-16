@@ -1,7 +1,9 @@
 import { useState } from "react";
 import SearchBar from "./components/SearchBar";
 import CurrentWeather from "./containers/CurrentWeather";
+import WeekWeather from "./containers/WeekWeather";
 import mockCurrentWeather from "./data/mockCurrentWeather.json";
+import mockWeekWeather from "./data/mockWeekWeather.json";
 
 const App = () => {
   const [location, setLocation] = useState("");
@@ -12,6 +14,7 @@ const App = () => {
         <SearchBar onLocationChange={setLocation} />
       </div>
       <CurrentWeather weatherData={mockCurrentWeather} />
+      <WeekWeather weatherData={mockWeekWeather} />
     </div>
   );
 };

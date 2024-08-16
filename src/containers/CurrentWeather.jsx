@@ -12,7 +12,7 @@ export const CurrentWeatherContext = createContext({});
 const CurrentWeather = ({ weatherData }) => {
   return (
     <CurrentWeatherContext.Provider value={weatherData}>
-      <div className="flex flex-col gap-12 bg-white bg-opacity-25 p-12 text-white">
+      <div className="flex cursor-default flex-col gap-12 bg-white bg-opacity-25 p-12 text-white">
         <Location />
         <div className="flex items-center justify-around">
           <TempAndIcon />

@@ -6,13 +6,17 @@ const DayWeather = ({ weatherData, key }) => {
   const day = convertDateToDay(date);
 
   return (
-    <li key={key}>
+    <li
+      className="flex h-24 w-full items-center justify-center gap-6 bg-white bg-opacity-25"
+      key={key}
+    >
       <img
+        className="aspect-square w-16 rounded-full bg-white bg-opacity-25"
         src={`https://openweathermap.org/img/wn/${icon}@4x.png`}
         alt="weather icon"
       />
-      <div>
-        <h3>{day}</h3>
+      <div className="flex flex-col items-start justify-center text-white">
+        <h3 className="text-2xl font-bold">{day}</h3>
         <span>{temp}°C</span>
       </div>
     </li>
