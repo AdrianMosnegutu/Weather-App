@@ -1,0 +1,19 @@
+{
+  "location": "Cluj",
+  "country": "RO",
+  "coord": {
+    "lon": 23.324,
+    "lat": 39.421
+  },
+  "icon": "10d",
+  "temp": 32,
+  "tempMin": 30,
+  "tempMax": 33,
+  "description": "clear sky",
+  "feelsLike": 32,
+  "humidity": 70,
+  "visibility": 10000,
+  "windSpeed": 2,
+  "windDirection": 273,
+  "pressure": 1060
+}

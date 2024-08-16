@@ -8,10 +8,10 @@ import {
   FaWind,
 } from "react-icons/fa";
 import { FaDroplet } from "react-icons/fa6";
-import { CurrentWeatherContext } from "../containers/CurrentWeather";
+import { CurrentWeatherContext } from "../../containers/CurrentWeather";
 import WeatherProperty from "./WeatherProperty";
 
-const WeatherProperties = () => {
+const WeatherDetails = () => {
   const data = useContext(CurrentWeatherContext);
 
   return (
@@ -63,4 +63,4 @@ const WeatherProperties = () => {
   );
 };
 
-export default WeatherProperties;
+export default WeatherDetails;
