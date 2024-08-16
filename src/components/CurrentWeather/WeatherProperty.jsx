@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 const WeatherProperty = ({ name, icon, value }) => (
-  <li>
+  <li className="flex w-full items-center gap-3">
     {icon}
     <span>
       <strong>{name}</strong>: {value}
