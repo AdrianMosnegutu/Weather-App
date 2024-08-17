@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import SearchBar from "./components/SearchBar";
+import { WeekWeather } from "./components/WeekWeather";
 import CurrentWeather from "./containers/CurrentWeather";
-import WeekWeather from "./containers/WeekWeather";
 import { getCurrentWeather, getWeekWeather } from "./services/weatherApi";
 
 const notification = (text) => (

@@ -30,8 +30,4 @@ DayWeather.propTypes = {
   key: PropTypes.number.isRequired,
 };
 
-DayWeather.propTypes = {
-  key: PropTypes.number.isRequired,
-};
-
 export default DayWeather;

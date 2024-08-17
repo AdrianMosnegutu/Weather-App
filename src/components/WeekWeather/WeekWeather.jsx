@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { DayWeather } from "../components/WeekForecast";
+import { DayWeather } from ".";
 
 const WeekWeather = ({ weatherData }) => (
   <ul className="flex cursor-default gap-1 overflow-hidden rounded-b-2xl bg-white bg-opacity-25">
